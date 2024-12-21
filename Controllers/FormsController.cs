@@ -13,7 +13,43 @@ public class FormsController : Controller
         _logger = logger;
     }
 
-    public IActionResult index()
+    public IActionResult Index()
+    {
+        return View();
+    }
+    public IActionResult FormElements()
+    {
+        return View();
+    }
+    public IActionResult InputGroups()
+    {
+        return View();
+    }
+    public IActionResult FormsLayouts()
+    {
+        return View();
+    }
+    public IActionResult FormValidation()
+    {
+        return View();
+    }
+    public IActionResult FormWizard()
+    {
+        return View();
+    }
+    public IActionResult TextEditor()
+    {
+        return View();
+    }
+    public IActionResult FileUpload()
+    {
+        return View();
+    }
+    public IActionResult DatePickers()
+    {
+        return View();
+    }
+    public IActionResult Select2()
     {
         return View();
     }

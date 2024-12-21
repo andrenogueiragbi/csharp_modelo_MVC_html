@@ -12,6 +12,8 @@
 	<link href="~/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="~/assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
 	<link href="~/assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+	<link href="~/assets/plugins/smart-wizard/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+
 	<!-- loader-->
 	<link href="~/assets/css/pace.min.css" rel="stylesheet" />
     <script src="~/assets/js/pace.min.js"></script>
@@ -24,6 +26,9 @@
 	<link rel="stylesheet" href="~/assets/css/semi-dark.css" />
 	<link rel="stylesheet" href="~/assets/css/header-colors.css" /> *@
 	<title>Dashtrans - Bootstrap5 Admin Template</title>
+
+	@RenderSection("Links", required: false)
+
 </head>
 
 <body class="bg-theme bg-theme2">
@@ -212,9 +217,9 @@
 						<div class="menu-title">Tables</div>
 					</a>
 					<ul>
-						<li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
+						<li> <a href="@Url.Action("BasicYable", "Table")"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
 						</li>
-						<li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
+						<li> <a href="@Url.Action("Datatable", "Table")"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
 						</li>
 						<li> <a href="table-editable.html"><i class="bx bx-right-arrow-alt"></i>Editable Table</a>
 						</li>
@@ -713,7 +718,7 @@
 		<!--end header -->
 		<!--start page wrapper -->
 		<div class="page-wrapper">
-			@RenderBody();
+			@RenderBody()
 		</div>
 		<!--end page wrapper -->
 		<!--start overlay-->
@@ -776,7 +781,7 @@
 			$('#Transaction-History').DataTable({
 				lengthMenu: [[6, 10, 20, -1], [6, 10, 20, 'Todos']]
 			});
-		  } );
+		  });
 	</script>
 	<!--app JS-->
 	<script src="~/assets/js/app.js"></script>
