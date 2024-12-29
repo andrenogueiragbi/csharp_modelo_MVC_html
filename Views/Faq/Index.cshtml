@@ -1,4 +1,9 @@
-﻿<!doctype html>
+﻿@{
+	ViewData["Title"] = "Faq";
+	Layout = null;
+}
+
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -11,24 +16,18 @@
 	<link href="~/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
 	<link href="~/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="~/assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
-	<link href="~/assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link href="~/assets/plugins/smart-wizard/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
-
 	<!-- loader-->
 	<link href="~/assets/css/pace.min.css" rel="stylesheet" />
-    <script src="~/assets/js/pace.min.js"></script>
- 	<!-- Bootstrap CSS -->
+	<script src="~/assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
 	<link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="~/assets/css/app.css" rel="stylesheet">
 	<link href="~/assets/css/icons.css" rel="stylesheet">
 	<!-- Theme Style CSS -->
-@* 	<link rel="stylesheet" href="~/assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="~/assets/css/dark-theme.css" />
 	<link rel="stylesheet" href="~/assets/css/semi-dark.css" />
-	<link rel="stylesheet" href="~/assets/css/header-colors.css" /> *@
+	<link rel="stylesheet" href="~/assets/css/header-colors.css" />
 	<title>Dashtrans - Bootstrap5 Admin Template</title>
-
-	@RenderSection("Links", required: false)
-
 </head>
 
 <body class="bg-theme bg-theme2">
@@ -55,9 +54,9 @@
 						<div class="menu-title">Dashboard</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("Index", "Inicio")"><i class="bx bx-right-arrow-alt"></i>eCommerce</a>
+						<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>eCommerce</a>
 						</li>
-						<li> <a href="@Url.Action("Index", "Inicio")"><i class="bx bx-right-arrow-alt"></i>Analytics</a>
+						<li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Analytics</a>
 						</li>
 					</ul>
 				</li>
@@ -68,25 +67,25 @@
 						<div class="menu-title">Application</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("Email", "Application")"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
 						</li>
-						<li> <a href="@Url.Action("ChatBox", "Application")"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
 						</li>
-						<li> <a href="@Url.Action("FileManager", "Application")"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
+						<li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
 						</li>
-						<li> <a href="@Url.Action("Contact", "Application")"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
 						</li>
-						<li> <a href="@Url.Action("ToDoList", "Application")"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
+						<li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
 						</li>
-						<li> <a href="@Url.Action("Invoice", "Application")"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
 						</li>
-						<li> <a href="@Url.Action("Calendar", "Application")"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
+						<li> <a href="app-fullcalender.html"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
 						</li>
 					</ul>
 				</li>
 				<li class="menu-label">UI Elements</li>
 				<li>
-					<a href="@Url.Action("Index", "Widgets")">
+					<a href="widgets.html">
 						<div class="parent-icon"><i class='bx bx-cookie'></i>
 						</div>
 						<div class="menu-title">Widgets</div>
@@ -99,13 +98,13 @@
 						<div class="menu-title">eCommerce</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("Products", "ECommerce")"><i class="bx bx-right-arrow-alt"></i>Products</a>
+						<li> <a href="ecommerce-products.html"><i class="bx bx-right-arrow-alt"></i>Products</a>
 						</li>
-						<li> <a href="@Url.Action("ProductsDetails", "ECommerce")"><i class="bx bx-right-arrow-alt"></i>Product Details</a>
+						<li> <a href="ecommerce-products-details.html"><i class="bx bx-right-arrow-alt"></i>Product Details</a>
 						</li>
-						<li> <a href="@Url.Action("ProductsAddNewProducts", "ECommerce")"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
+						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
 						</li>
-						<li> <a href="@Url.Action("Orders", "ECommerce")"><i class="bx bx-right-arrow-alt"></i>Orders</a>
+						<li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
 						</li>
 					</ul>
 				</li>
@@ -116,39 +115,39 @@
 						<div class="menu-title">Components</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("Alerts", "Components")"><i class="bx bx-right-arrow-alt"></i>Alerts</a>
+						<li> <a href="component-alerts.html"><i class="bx bx-right-arrow-alt"></i>Alerts</a>
 						</li>
-						<li> <a href="@Url.Action("Accordions", "Components")"><i class="bx bx-right-arrow-alt"></i>Accordions</a>
+						<li> <a href="component-accordions.html"><i class="bx bx-right-arrow-alt"></i>Accordions</a>
 						</li>
-						<li> <a href="@Url.Action("Badges", "Components")"><i class="bx bx-right-arrow-alt"></i>Badges</a>
+						<li> <a href="component-badges.html"><i class="bx bx-right-arrow-alt"></i>Badges</a>
 						</li>
-						<li> <a href="@Url.Action("Buttons", "Components")"><i class="bx bx-right-arrow-alt"></i>Buttons</a>
+						<li> <a href="component-buttons.html"><i class="bx bx-right-arrow-alt"></i>Buttons</a>
 						</li>
-						<li> <a href="@Url.Action("Cards", "Components")"><i class="bx bx-right-arrow-alt"></i>Cards</a>
+						<li> <a href="component-cards.html"><i class="bx bx-right-arrow-alt"></i>Cards</a>
 						</li>
-						<li> <a href="@Url.Action("Carousels", "Components")"><i class="bx bx-right-arrow-alt"></i>Carousels</a>
+						<li> <a href="component-carousels.html"><i class="bx bx-right-arrow-alt"></i>Carousels</a>
 						</li>
-						<li> <a href="@Url.Action("ListGroups", "Components")"><i class="bx bx-right-arrow-alt"></i>List Groups</a>
+						<li> <a href="component-list-groups.html"><i class="bx bx-right-arrow-alt"></i>List Groups</a>
 						</li>
-						<li> <a href="@Url.Action("MediaObjects", "Components")"><i class="bx bx-right-arrow-alt"></i>Media Objects</a>
+						<li> <a href="component-media-object.html"><i class="bx bx-right-arrow-alt"></i>Media Objects</a>
 						</li>
-						<li> <a href="@Url.Action("Modals", "Components")"><i class="bx bx-right-arrow-alt"></i>Modals</a>
+						<li> <a href="component-modals.html"><i class="bx bx-right-arrow-alt"></i>Modals</a>
 						</li>
-						<li> <a href="@Url.Action("NavsTabs", "Components")"><i class="bx bx-right-arrow-alt"></i>Navs & Tabs</a>
+						<li> <a href="component-navs-tabs.html"><i class="bx bx-right-arrow-alt"></i>Navs & Tabs</a>
 						</li>
-						<li> <a href="@Url.Action("Navbar", "Components")"><i class="bx bx-right-arrow-alt"></i>Navbar</a>
+						<li> <a href="component-navbar.html"><i class="bx bx-right-arrow-alt"></i>Navbar</a>
 						</li>
-						<li> <a href="@Url.Action("Pagination", "Components")"><i class="bx bx-right-arrow-alt"></i>Pagination</a>
+						<li> <a href="component-paginations.html"><i class="bx bx-right-arrow-alt"></i>Pagination</a>
 						</li>
-						<li> <a href="@Url.Action("PopoversTooltips", "Components")"><i class="bx bx-right-arrow-alt"></i>Popovers & Tooltips</a>
+						<li> <a href="component-popovers-tooltips.html"><i class="bx bx-right-arrow-alt"></i>Popovers & Tooltips</a>
 						</li>
-						<li> <a href="@Url.Action("Progress", "Components")"><i class="bx bx-right-arrow-alt"></i>Progress</a>
+						<li> <a href="component-progress-bars.html"><i class="bx bx-right-arrow-alt"></i>Progress</a>
 						</li>
-						<li> <a href="@Url.Action("Spinners", "Components")"><i class="bx bx-right-arrow-alt"></i>Spinners</a>
+						<li> <a href="component-spinners.html"><i class="bx bx-right-arrow-alt"></i>Spinners</a>
 						</li>
-						<li> <a href="@Url.Action("Notifications", "Components")"><i class="bx bx-right-arrow-alt"></i>Notifications</a>
+						<li> <a href="component-notifications.html"><i class="bx bx-right-arrow-alt"></i>Notifications</a>
 						</li>
-						<li> <a href="@Url.Action("AvatrsChips", "Components")"><i class="bx bx-right-arrow-alt"></i>Avatrs & Chips</a>
+						<li> <a href="component-avtars-chips.html"><i class="bx bx-right-arrow-alt"></i>Avatrs & Chips</a>
 						</li>
 					</ul>
 				</li>
@@ -159,11 +158,11 @@
 						<div class="menu-title">Content</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("GridSystem", "Content")"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
+						<li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
 						</li>
-						<li> <a href="@Url.Action("Typography", "Content")"><i class="bx bx-right-arrow-alt"></i>Typography</a>
+						<li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
 						</li>
-						<li> <a href="@Url.Action("TextUtilities", "Content")"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
+						<li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
 						</li>
 					</ul>
 				</li>
@@ -174,11 +173,11 @@
 						<div class="menu-title">Icons</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("LineIcons", "Icons")"><i class="bx bx-right-arrow-alt"></i>Line Icons</a>
+						<li> <a href="icons-line-icons.html"><i class="bx bx-right-arrow-alt"></i>Line Icons</a>
 						</li>
-						<li> <a href="@Url.Action("Boxicons", "Icons")"><i class="bx bx-right-arrow-alt"></i>Boxicons</a>
+						<li> <a href="icons-boxicons.html"><i class="bx bx-right-arrow-alt"></i>Boxicons</a>
 						</li>
-						<li> <a href="@Url.Action("FeatherIcons", "Icons")"><i class="bx bx-right-arrow-alt"></i>Feather Icons</a>
+						<li> <a href="icons-feather-icons.html"><i class="bx bx-right-arrow-alt"></i>Feather Icons</a>
 						</li>
 					</ul>
 				</li>
@@ -190,23 +189,23 @@
 						<div class="menu-title">Forms</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("FormElements", "Forms")"><i class="bx bx-right-arrow-alt"></i>Form Elements</a>
+						<li> <a href="form-elements.html"><i class="bx bx-right-arrow-alt"></i>Form Elements</a>
 						</li>
-						<li> <a href="@Url.Action("InputGroups", "Forms")"><i class="bx bx-right-arrow-alt"></i>Input Groups</a>
+						<li> <a href="form-input-group.html"><i class="bx bx-right-arrow-alt"></i>Input Groups</a>
 						</li>
-						<li> <a href="@Url.Action("FormsLayouts", "Forms")"><i class="bx bx-right-arrow-alt"></i>Forms Layouts</a>
+						<li> <a href="form-layouts.html"><i class="bx bx-right-arrow-alt"></i>Forms Layouts</a>
 						</li>
-						<li> <a href="@Url.Action("FormValidation", "Forms")"><i class="bx bx-right-arrow-alt"></i>Form Validation</a>
+						<li> <a href="form-validations.html"><i class="bx bx-right-arrow-alt"></i>Form Validation</a>
 						</li>
-						<li> <a href="@Url.Action("FormWizard", "Forms")"><i class="bx bx-right-arrow-alt"></i>Form Wizard</a>
+						<li> <a href="form-wizard.html"><i class="bx bx-right-arrow-alt"></i>Form Wizard</a>
 						</li>
-						<li> <a href="@Url.Action("TextEditor", "Forms")"><i class="bx bx-right-arrow-alt"></i>Text Editor</a>
+						<li> <a href="form-text-editor.html"><i class="bx bx-right-arrow-alt"></i>Text Editor</a>
 						</li>
-						<li> <a href="@Url.Action("FileUpload", "Forms")"><i class="bx bx-right-arrow-alt"></i>File Upload</a>
+						<li> <a href="form-file-upload.html"><i class="bx bx-right-arrow-alt"></i>File Upload</a>
 						</li>
-						<li> <a href="@Url.Action("DatePickers", "Forms")"><i class="bx bx-right-arrow-alt"></i>Date Pickers</a>
+						<li> <a href="form-date-time-pickes.html"><i class="bx bx-right-arrow-alt"></i>Date Pickers</a>
 						</li>
-						<li> <a href="@Url.Action("Select2", "Forms")"><i class="bx bx-right-arrow-alt"></i>Select2</a>
+						<li> <a href="form-select2.html"><i class="bx bx-right-arrow-alt"></i>Select2</a>
 						</li>
 					</ul>
 				</li>
@@ -217,11 +216,9 @@
 						<div class="menu-title">Tables</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("BasicYable", "Table")"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
+						<li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
 						</li>
-						<li> <a href="@Url.Action("Datatable", "Table")"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
-						</li>
-						<li> <a href="table-editable.html"><i class="bx bx-right-arrow-alt"></i>Editable Table</a>
+						<li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
 						</li>
 					</ul>
 				</li>
@@ -233,31 +230,31 @@
 						<div class="menu-title">Authentication</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("AuthenticationSignin", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In</a>
+						<li> <a href="authentication-signin.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In</a>
 						</li>
-						<li> <a href="@Url.Action("AuthenticationSignup", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up</a>
+						<li> <a href="authentication-signup.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up</a>
 						</li>
-						<li> <a href="@Url.Action("AuthenticationSigninWithHeaderFooter", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In with Header & Footer</a>
+						<li> <a href="authentication-signin-with-header-footer.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In with Header & Footer</a>
 						</li>
-						<li> <a href="@Url.Action("AuthenticationSignupWithHeaderFooter", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up with Header & Footer</a>
+						<li> <a href="authentication-signup-with-header-footer.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up with Header & Footer</a>
 						</li>
-						<li> <a href="@Url.Action("AuthenticationForgotPassword", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Forgot Password</a>
+						<li> <a href="authentication-forgot-password.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Forgot Password</a>
 						</li>
-						<li> <a href="@Url.Action("AuthenticationResetPassword", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Reset Password</a>
+						<li> <a href="authentication-reset-password.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Reset Password</a>
 						</li>
-						<li> <a href="@Url.Action("AuthenticationLockscreen", "Authentication")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Lock Screen</a>
+						<li> <a href="authentication-lock-screen.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Lock Screen</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="@Url.Action("Index", "UserProfile")">
+					<a href="user-profile.html">
 						<div class="parent-icon"><i class="bx bx-user-circle"></i>
 						</div>
 						<div class="menu-title">User Profile</div>
 					</a>
 				</li>
 				<li>
-					<a href="@Url.Action("Index", "Timeline")">
+					<a href="timeline.html">
 						<div class="parent-icon"> <i class="bx bx-video-recording"></i>
 						</div>
 						<div class="menu-title">Timeline</div>
@@ -270,25 +267,25 @@
 						<div class="menu-title">Errors</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("Errors404Error", "Erros")" target="_blank"><i class="bx bx-right-arrow-alt"></i>404 Error</a>
+						<li> <a href="errors-404-error.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>404 Error</a>
 						</li>
-						<li> <a href="@Url.Action("Errors500Error", "Erros")" target="_blank"><i class="bx bx-right-arrow-alt"></i>500 Error</a>
+						<li> <a href="errors-500-error.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>500 Error</a>
 						</li>
-						<li> <a href="@Url.Action("ErrorsComingSoon", "Erros")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Coming Soon</a>
+						<li> <a href="errors-coming-soon.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Coming Soon</a>
 						</li>
-						<li> <a href="@Url.Action("ErrorBlankPage", "Erros")" target="_blank"><i class="bx bx-right-arrow-alt"></i>Blank Page</a>
+						<li> <a href="error-blank-page.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Blank Page</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="@Url.Action("Index", "Faq")">
+					<a href="faq.html">
 						<div class="parent-icon"><i class="bx bx-help-circle"></i>
 						</div>
 						<div class="menu-title">FAQ</div>
 					</a>
 				</li>
 				<li>
-					<a href="@Url.Action("Index", "PricingTable")">
+					<a href="pricing-table.html">
 						<div class="parent-icon"><i class="bx bx-diamond"></i>
 						</div>
 						<div class="menu-title">Pricing</div>
@@ -302,11 +299,11 @@
 						<div class="menu-title">Charts</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("ChartsApexChart", "Charts")"><i class="bx bx-right-arrow-alt"></i>Apex</a>
+						<li> <a href="charts-apex-chart.html"><i class="bx bx-right-arrow-alt"></i>Apex</a>
 						</li>
-						<li> <a href="@Url.Action("ChartsChartjs", "Charts")"><i class="bx bx-right-arrow-alt"></i>Chartjs</a>
+						<li> <a href="charts-chartjs.html"><i class="bx bx-right-arrow-alt"></i>Chartjs</a>
 						</li>
-						<li> <a href="@Url.Action("ChartsHighcharts", "Charts")"><i class="bx bx-right-arrow-alt"></i>Highcharts</a>
+						<li> <a href="charts-highcharts.html"><i class="bx bx-right-arrow-alt"></i>Highcharts</a>
 						</li>
 					</ul>
 				</li>
@@ -317,9 +314,9 @@
 						<div class="menu-title">Maps</div>
 					</a>
 					<ul>
-						<li> <a href="@Url.Action("MapGoogleMaps", "Maps")"><i class="bx bx-right-arrow-alt"></i>Google Maps</a>
+						<li> <a href="map-google-maps.html"><i class="bx bx-right-arrow-alt"></i>Google Maps</a>
 						</li>
-						<li> <a href="@Url.Action("MapVectorMaps", "Maps")"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
+						<li> <a href="map-vector-maps.html"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
 						</li>
 					</ul>
 				</li>
@@ -385,32 +382,32 @@
 								<div class="dropdown-menu dropdown-menu-end">
 									<div class="row row-cols-3 g-3 p-3">
 										<div class="col text-center">
-											<div class="app-box mx-auto"><i class='bx bx-group'></i>
+											<div class="app-box mx-auto bg-gradient-cosmic text-white"><i class='bx bx-group'></i>
 											</div>
 											<div class="app-title">Teams</div>
 										</div>
 										<div class="col text-center">
-											<div class="app-box mx-auto"><i class='bx bx-atom'></i>
+											<div class="app-box mx-auto bg-gradient-burning text-white"><i class='bx bx-atom'></i>
 											</div>
 											<div class="app-title">Projects</div>
 										</div>
 										<div class="col text-center">
-											<div class="app-box mx-auto"><i class='bx bx-shield'></i>
+											<div class="app-box mx-auto bg-gradient-lush text-white"><i class='bx bx-shield'></i>
 											</div>
 											<div class="app-title">Tasks</div>
 										</div>
 										<div class="col text-center">
-											<div class="app-box mx-auto"><i class='bx bx-notification'></i>
+											<div class="app-box mx-auto bg-gradient-kyoto text-dark"><i class='bx bx-notification'></i>
 											</div>
 											<div class="app-title">Feeds</div>
 										</div>
 										<div class="col text-center">
-											<div class="app-box mx-auto"><i class='bx bx-file'></i>
+											<div class="app-box mx-auto bg-gradient-blues text-dark"><i class='bx bx-file'></i>
 											</div>
 											<div class="app-title">Files</div>
 										</div>
 										<div class="col text-center">
-											<div class="app-box mx-auto"><i class='bx bx-filter-alt'></i>
+											<div class="app-box mx-auto bg-gradient-moonlit text-white"><i class='bx bx-filter-alt'></i>
 											</div>
 											<div class="app-title">Alerts</div>
 										</div>
@@ -431,7 +428,7 @@
 									<div class="header-notifications-list">
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class="bx bx-group"></i>
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
@@ -442,7 +439,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class="bx bx-cart-alt"></i>
+												<div class="notify bg-light-danger text-danger"><i class="bx bx-cart-alt"></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
@@ -453,7 +450,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class="bx bx-file"></i>
+												<div class="notify bg-light-success text-success"><i class="bx bx-file"></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">24 PDF File<span class="msg-time float-end">19 min
@@ -464,7 +461,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class="bx bx-send"></i>
+												<div class="notify bg-light-warning text-warning"><i class="bx bx-send"></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Time Response <span class="msg-time float-end">28 min
@@ -475,7 +472,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class="bx bx-home-circle"></i>
+												<div class="notify bg-light-info text-info"><i class="bx bx-home-circle"></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">New Product Approved <span
@@ -486,7 +483,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class="bx bx-message-detail"></i>
+												<div class="notify bg-light-danger text-danger"><i class="bx bx-message-detail"></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">New Comments <span class="msg-time float-end">4 hrs
@@ -497,7 +494,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class='bx bx-check-square'></i>
+												<div class="notify bg-light-success text-success"><i class='bx bx-check-square'></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Your item is shipped <span class="msg-time float-end">5 hrs
@@ -508,7 +505,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class='bx bx-user-pin'></i>
+												<div class="notify bg-light-primary text-primary"><i class='bx bx-user-pin'></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">New 24 authors<span class="msg-time float-end">1 day
@@ -519,7 +516,7 @@
 										</a>
 										<a class="dropdown-item" href="javascript:;">
 											<div class="d-flex align-items-center">
-												<div class="notify"><i class='bx bx-door-open'></i>
+												<div class="notify bg-light-warning text-warning"><i class='bx bx-door-open'></i>
 												</div>
 												<div class="flex-grow-1">
 													<h6 class="msg-name">Defense Alerts <span class="msg-time float-end">2 weeks
@@ -718,7 +715,163 @@
 		<!--end header -->
 		<!--start page wrapper -->
 		<div class="page-wrapper">
-			@RenderBody()
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Faq</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">Faq</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="ms-auto">
+						<div class="btn-group">
+							<button type="button" class="btn btn-light">Settings</button>
+							<button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
+							</button>
+							<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
+								<a class="dropdown-item" href="javascript:;">Another action</a>
+								<a class="dropdown-item" href="javascript:;">Something else here</a>
+								<div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end breadcrumb-->
+				<div class="row">
+					<div class="col-12 col-lg-9 mx-auto">
+						<div class="text-center">
+							<h5 class="mb-0 text-uppercase">Frequently asked questions (FAQ<small class="text-lowercase">s</small>)</h5>
+							<hr/>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+						  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Just once I'd like to eat dinner with a celebrity?
+						  </button>
+						</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Yes, if you make it look like an electrical fire. When you do things right, people won't be sure you've done anything at all. I was having the most wonderful dream. Except you were there, and you were there, and you were there! No argument here. Goodbye, cruel world. Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what would appear to be some sort of cruel muslin and the cute little pom-pom curtain pull cords. Cruel though they may be.</p>
+												<p><strong>Example: </strong>Shut up and get to the point!</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Bender, I didn't know you liked cooking?
+						  </button>
+						</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>That's so cute. Can we have Bender Burgers again? Is the Space Pope reptilian!? I wish! It's a nickel. Bender! Ship! Stop bickering or I'm going to come back there and change your opinions manually!</p>
+												<p><strong>Example: </strong>Okay, I like a challenge. Is that a cooking show? No argument here.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingThree">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							My fellow Earthicans?
+						  </button>
+						</h2>
+										<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>As I have explained in my book 'Earth in the Balance', and the much more popular 'Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards. Fry, you can't just sit here in the dark listening to classical music.</p>
+												<p><strong>Example: </strong>Actually, that's still true. Well, let's just dump it in the sewer and say we delivered it.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFour">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							Who am I making this out to?
+						  </button>
+						</h2>
+										<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat. Also Zoidberg. Can we have Bender Burgers again? Goodbye, cruel world. Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what would appear to be some sort of cruel muslin and the cute little pom-pom curtain pull cords.</p>
+												<p><strong>Example: </strong>Cruel though they may be...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<h5 class="mb-0 text-uppercase">Frequently asked questions (FAQ<small class="text-lowercase">s</small>)</h5>
+							<hr/>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<div class="accordion accordion-flush" id="accordionExample2">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFive">
+						  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+							Michelle, I don't regret this, but I both rue and lament it?
+						  </button>
+						</h2>
+										<div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+											<div class="accordion-body">
+												<p>Look, last night was a mistake. We'll need to have a look inside you with this camera. Good news, everyone! There's a report on TV with some very bad news! You know, I was God once. You lived before you met me?!</p>
+												<p><strong>Example: </strong>I'm Santa Claus! Pansy. That's a popular name today. Little "e", big "B"?</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingSix">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							Why am I sticky and naked?
+						  </button>
+						</h2>
+										<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
+											<div class="accordion-body">
+												<p>Did I miss something fun? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Kids don't turn rotten just from watching TV.</p>
+												<p><strong>Example: </strong>I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingSeven">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+							Is that a cooking show?
+						  </button>
+						</h2>
+										<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
+											<div class="accordion-body">
+												<p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. You seem malnourished. Are you suffering from intestinal parasites? Check it out, y'all. Everyone who was invited is here. I am Singing Wind, Chief of the Martians.</p>
+												<p><strong>Example: </strong>Man, I'm sore all over. I feel like I just went ten rounds with mighty Thor.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingEight">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+							You are the last hope of the universe?
+						  </button>
+						</h2>
+										<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+											<div class="accordion-body">
+												<p>I don't want to be rescued. I videotape every customer that comes in here, so that I may blackmail them later. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."</p>
+												<p><strong>Example: </strong>Tell them I hate them.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
 		</div>
 		<!--end page wrapper -->
 		<!--start overlay-->
@@ -742,26 +895,28 @@
 			</div>
 			<hr/>
 			<p class="mb-0">Gaussian Texture</p>
-			<hr>
-			<ul class="switcher">
+			  <hr>
+			  
+			  <ul class="switcher">
 				<li id="theme1"></li>
 				<li id="theme2"></li>
 				<li id="theme3"></li>
 				<li id="theme4"></li>
 				<li id="theme5"></li>
 				<li id="theme6"></li>
-			</ul>
-			<hr>
-			<p class="mb-0">Gradient Background</p>
-			<hr>
-			<ul class="switcher">
+			  </ul>
+               <hr>
+			  <p class="mb-0">Gradient Background</p>
+			  <hr>
+			  
+			  <ul class="switcher">
 				<li id="theme7"></li>
 				<li id="theme8"></li>
 				<li id="theme9"></li>
 				<li id="theme10"></li>
 				<li id="theme11"></li>
 				<li id="theme12"></li>
-			</ul>
+			  </ul>
 		</div>
 	</div>
 	<!--end switcher-->
@@ -772,21 +927,8 @@
 	<script src="~/assets/plugins/simplebar/js/simplebar.min.js"></script>
 	<script src="~/assets/plugins/metismenu/js/metisMenu.min.js"></script>
 	<script src="~/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	@RenderSection("Scripts", required: false)
-
-	<script src="~/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-	<script src="~/assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#Transaction-History').DataTable({
-				lengthMenu: [[6, 10, 20, -1], [6, 10, 20, 'Todos']]
-			});
-		  });
-	</script>
 	<!--app JS-->
 	<script src="~/assets/js/app.js"></script>
-
-
 </body>
 
 </html>
